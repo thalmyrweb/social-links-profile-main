@@ -4,7 +4,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## 🔗 Live Site
 
-📍 [View on GitHub Pages](https://thalmyrweb.github.io/social-links-profile)
+📍 [View on GitHub Pages](https://thalmyrweb.github.io/social-links-profile-main)
 
 ## ⚙️ Technologies Used
 
