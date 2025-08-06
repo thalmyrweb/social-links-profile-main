@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --Green: #c5f82a;
+  --Grey-900: #141414ff;
+  --Grey-800: #1f1f1fff;
+  --Grey-700: #333333ff;
+  --white: #ffffff;
+
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-22: 1.375rem;
+  --spacing-24: 1.5rem;
+
+  --text-preset-1: 1.125rem;
+  --text-preset-2: 0.625rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: var(--Grey-900);
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-24);
+}
+
+.card-container {
+  background-color: var(--Grey-800);
+  max-width: 298px;
+  max-height: 470px;
+  padding: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  box-shadow: var(--spacing-8) var(--spacing-8) 2px var(--gray-950);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile-image {
+  border-radius: 50%;
+  max-width: 68px;
+}
+
+.person-name {
+  font-size: var(--text-preset-1);
+  font-weight: 700;
+  margin-top: var(--spacing-22);
+  color: var(--white);
+}
+
+.profile-address {
+  font-size: var(--text-preset-2);
+  font-weight: 700;
+  margin-top: var(--spacing-10);
+  color: var(--Green);
+}
+
+.personal-bio {
+  font-size: var(--text-preset-2);
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.links-Section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-12);
+  margin-top: var(--spacing-22);
+}
+
+.links-btn{
+  width: 100%;
+  background-color: var(--Grey-700);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--text-preset-2);
+  font-weight: 700;
+  padding: 11px;
+  border-radius: 5px;
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+.links-btn:hover{
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    max-width: 280px;
+    max-height: 500px;
+  }
+}
